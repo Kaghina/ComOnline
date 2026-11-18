@@ -1,0 +1,77 @@
+/* Page d'accueil */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    gap: 40px;
+    background: radial-gradient(circle at 80% 50%, var(--sombre-clair) 0%, var(--sombre) 60%);
+    color: var(--texte-sur-sombre);
+    border-radius: 22px;
+    padding: 48px;
+    margin-bottom: 36px;
+}
+
+.hero .etiquette {
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #a8dc8c;
+    background: rgba(79, 154, 47, .2);
+    border-radius: 999px;
+    padding: 4px 12px;
+    margin-bottom: 14px;
+}
+
+.hero h1 { font-size: 2.5rem; line-height: 1.15; margin-bottom: 14px; }
+.hero h1 span { color: var(--orange); }
+.hero p { color: var(--texte-doux-sur-sombre); font-size: 1.05rem; max-width: 520px; }
+.hero .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.hero .btn-secondaire { color: #a8dc8c; border-color: #a8dc8c; }
+.hero .btn-secondaire:hover { color: #fff; background: var(--vert); border-color: var(--vert); }
+
+/* logo (fond transparent) directement sur le fond sombre */
+.hero-logo {
+    justify-self: center;
+    width: 100%;
+    max-width: 320px;
+    filter: drop-shadow(0 12px 28px rgba(0, 0, 0, .45));
+}
+
+/* chiffres clés */
+.chiffres { margin-bottom: 44px; }
+
+.chiffre { text-align: center; }
+.chiffre strong { display: block; font-size: 2.2rem; color: var(--orange); line-height: 1.1; }
+.chiffre span { color: var(--texte-doux); font-size: .9rem; }
+
+/* fonctionnalités */
+.section-titre { text-align: center; margin-bottom: 24px; }
+.section-titre p { color: var(--texte-doux); }
+
+.fonction {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--texte);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.fonction:hover { transform: translateY(-4px); box-shadow: var(--ombre-forte); }
+
+.fonction img { width: 100%; height: 150px; object-fit: cover; background: #f3efe8; }
+
+.fonction div { padding: 18px 20px 22px; }
+.fonction h3 { margin-bottom: 6px; }
+.fonction p { color: var(--texte-doux); font-size: .88rem; }
+.fonction .lien { display: inline-block; margin-top: 12px; color: var(--orange-fonce); font-weight: 600; font-size: .88rem; }
+
+@media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; padding: 32px 24px; text-align: center; }
+    .hero p { margin: 0 auto; }
+    .hero .actions { justify-content: center; }
+    .hero-logo { max-width: 200px; grid-row: 1; }
+    .hero h1 { font-size: 2rem; }
+}

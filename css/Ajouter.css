@@ -1,0 +1,4 @@
+/* Page Ajouter un service */
+
+.carte-formulaire { max-width: 760px; }
+.carte-formulaire input[type="submit"] { justify-self: start; }

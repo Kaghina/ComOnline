@@ -1,0 +1,15 @@
+/* Page Recherche */
+
+.barre-recherche {
+    display: grid;
+    grid-template-columns: 200px 1fr auto;
+    gap: 12px;
+    align-items: end;
+}
+
+.resultats { margin-top: 24px; }
+.resultats .compteur { color: var(--texte-doux); font-size: .9rem; margin-bottom: 12px; }
+
+@media (max-width: 640px) {
+    .barre-recherche { grid-template-columns: 1fr; }
+}

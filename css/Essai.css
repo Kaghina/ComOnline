@@ -1,0 +1,47 @@
+/* Page Périodes d'essai */
+
+.mise-en-page {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.mise-en-page .carte-formulaire { position: sticky; top: 100px; }
+
+.periodes { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+
+.periode { padding: 18px; }
+
+.periode .entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.periode h3 { margin: 0; font-size: 1rem; }
+
+.periode .duree {
+    flex-shrink: 0;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--blanc);
+    background: var(--orange);
+    border-radius: 999px;
+    padding: 2px 10px;
+}
+
+.attente {
+    text-align: center;
+    color: var(--texte-doux);
+    padding: 48px 24px;
+    border: 2px dashed var(--bordure);
+    border-radius: var(--rayon);
+}
+
+@media (max-width: 860px) {
+    .mise-en-page { grid-template-columns: 1fr; }
+    .mise-en-page .carte-formulaire { position: static; }
+}

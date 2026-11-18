@@ -1,0 +1,42 @@
+/* Page Historique : affichage en frise chronologique */
+
+.entete-historique {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.entete-historique h2 { margin: 0; }
+
+.frise { list-style: none; position: relative; padding-left: 26px; }
+
+.frise::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: var(--bordure);
+}
+
+.frise li { position: relative; padding: 8px 0 14px; }
+
+.frise li::before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: 14px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--orange);
+    box-shadow: 0 0 0 4px var(--orange-clair);
+}
+
+.frise li:last-child::before { background: var(--vert); box-shadow: 0 0 0 4px var(--vert-clair); }
+
+.frise time { display: block; font-size: .8rem; color: var(--texte-doux); }
