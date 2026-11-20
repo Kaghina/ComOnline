@@ -117,4 +117,6 @@ Contenu sous licence [Creative Commons BY-NC-SA](https://creativecommons.org/lic
 
 ## Auteur
 
-Kaghina
+Auteurs
+  Kahina Ait Kaci Arab
+
