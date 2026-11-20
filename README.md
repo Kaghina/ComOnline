@@ -114,3 +114,7 @@ Le jeu de données contient 12 départements, 22 communes réelles de la région
 ## Licence
 
 Contenu sous licence [Creative Commons BY-NC-SA](https://creativecommons.org/licenses/).
+
+## Auteur
+
+Kaghina
